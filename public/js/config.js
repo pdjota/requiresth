@@ -5,7 +5,10 @@ require.config({
     'director': 'lib/director'
   },
   shim: {
-    'underscore': {
+    'director': {
+      exports: 'Router'
+    },
+    'base': { /* Underscore for templating */
       exports: '_'
     }
   }
