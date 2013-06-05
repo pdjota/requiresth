@@ -1,5 +1,5 @@
 /*global Router, $$, $ */
-(function (window) {
+define(['director', 'helpers'], function (Router) {
 	'use strict';
 
 	/**
@@ -337,7 +337,7 @@
 		return document.location.hash.split('/')[1];
 	};
 
-	// Export to window
-	window.app.Controller = Controller;
-})(window);
+	// Export
+  return Controller;
+});
 

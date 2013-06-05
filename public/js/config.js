@@ -13,9 +13,6 @@ require.config({
     }
   }
 });
-require([
-  'base',
-  'director'
-], function () {
-  window.app = {};
+requirejs(['app'], function (app) {
+  app.init();
 });

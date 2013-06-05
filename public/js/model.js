@@ -1,4 +1,4 @@
-(function (window) {
+define(function () {
 	'use strict';
 
 	/**
@@ -114,6 +114,6 @@
 		return todos;
 	};
 
-	// Export to window
-	window.app.Model = Model;
-})(window);
+	// Export
+	return Model;
+});

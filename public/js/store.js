@@ -1,5 +1,5 @@
 /*jshint eqeqeq:false */
-(function (window) {
+define(function () {
 	'use strict';
 
 	/**
@@ -137,6 +137,6 @@
 		callback.call(this, JSON.parse(localStorage[this._dbName]).todos);
 	};
 
-	// Export to window
-	window.app.Store = Store;
-})(window);
+	// Export
+	return Store;
+});

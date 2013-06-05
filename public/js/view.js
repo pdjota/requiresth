@@ -1,5 +1,5 @@
 /*jshint laxbreak:true */
-(function (window) {
+define(function () {
 	'use strict';
 
 	/**
@@ -86,6 +86,6 @@
 		}
 	};
 
-	// Export to window
-	window.app.View = View;
-})(window);
+	// Export
+  return View;
+});
