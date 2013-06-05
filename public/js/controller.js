@@ -340,3 +340,4 @@
 	// Export to window
 	window.app.Controller = Controller;
 })(window);
+
