@@ -1,14 +1,16 @@
 require.config({
   baseUrl: '/js',
+  hgn: { /* Hogan/Mustache template configuration */
+    templateExtension: '.html'
+  },
   paths: {
-    'base':     'lib/base',
     'director': 'lib/director'
   },
   shim: {
     'director': {
       exports: 'Router'
     },
-    'base': { /* Underscore for templating */
+    'underscore': {
       exports: '_'
     }
   }
