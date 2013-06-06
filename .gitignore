@@ -1,4 +1,5 @@
 node_modules
 bower_components
 public/js/main.min.js
+main.min.js
 r.js
